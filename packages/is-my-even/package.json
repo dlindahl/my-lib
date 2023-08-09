@@ -5,6 +5,6 @@
   "devDependencies": {},
   "scripts": {
     "clean": "rm -rf dist-ts dist",
-    "build": "npm run clean && tsc -p tsconfig.json && rollup -c"
+    "build": "npm run clean && tsc -p tsconfig.build.json && rollup -c"
   }
 }
