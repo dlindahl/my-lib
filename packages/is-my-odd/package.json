@@ -1,0 +1,26 @@
+{
+  "name": "@example/is-my-odd",
+  "version": "0.0.0",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "exports": {
+    "require": "./dist/index.js",
+    "default": "./dist/index-esm.mjs"
+  },
+  "scripts": {
+    "clean": "rm -rf dist-ts dist",
+    "build": "npm run clean && tsc -p tsconfig.json && rollup -c"
+  },
+  "dependencies": {
+    "aria-query": "5.3.0",
+    "@example/is-my-even": "*",
+    "react": "18.2.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "*",
+    "@rollup/plugin-node-resolve": "15.1.0",
+    "@types/node": "20.4.9",
+    "@types/react": "18.2.19",
+    "rollup": "^3.27.2"
+  }
+}

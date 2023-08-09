@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "allowJs": false,
+    "target": "es2017",
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "declaration": true,
+    "importHelpers": true,
+    "forceConsistentCasingInFileNames": true,
+    "useUnknownInCatchVariables": false
+  },
+  "exclude": [
+    "node_modules",
+  ],
+  "references": [
+    {
+      "path": "packages/is-my-even"
+    },
+    {
+      "path": "packages/is-my-odd"
+    }
+  ]
+}

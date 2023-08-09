@@ -1,0 +1,10 @@
+{
+  "name": "@example/is-my-even",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "devDependencies": {},
+  "scripts": {
+    "clean": "rm -rf dist-ts dist",
+    "build": "npm run clean && tsc -p tsconfig.json && rollup -c"
+  }
+}
